@@ -1,0 +1,2 @@
+# linyc.github.io
+blog
