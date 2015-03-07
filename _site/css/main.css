@@ -69,8 +69,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: #111; }
 
 /**
  * Blockquotes
@@ -149,7 +148,8 @@ pre {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  position: relative; }
+  position: relative;
+  background-color: black; }
 
 .site-title {
   font-size: 26px;
@@ -158,7 +158,9 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: gray; }
+  .site-title:hover {
+    color: white; }
 
 .site-nav {
   float: right;
@@ -166,10 +168,12 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: white;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
+    .site-nav .page-link:hover {
+      color: gray; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
@@ -207,7 +211,8 @@ pre {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-color: #efefef; }
 
 .footer-heading {
   font-size: 18px;

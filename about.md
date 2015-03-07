@@ -1,11 +1,25 @@
 ---
 layout: page
-title: About
+title: 简历
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+**Hi, 欢迎光临我的博客，下面是一些关于我的工作经验。**
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+我是一个程序员，我也非常喜欢做程序的开发工作，所以我大学选的专业是软件开发技术。
+
+2009/7 毕业于广东机电职业技术学院，不过在毕业前其实我已经在一家软件公司实习了3个月了。
+
+2009/8 ~ 2011/12 我在一家做软件的公司上班，用C# 独立开发了很多项目，大多都是winfrom类型的，主要是我比较擅长也比较喜欢，当然也做过一些Asp.net的网站项目，工作成绩还不错。
+
+2011/12 ~ 2013/5 我来到一家电子商务(B2B2C)的公司工作，主要是负责开发一些后台的工具来帮助平台上的卖家可以把他们的商品数据上传到他们的店铺里。
+
+2013/5 ~ 2013/8 我在一家初创的做茶叶销售的电子商务(B2C)公司工作，期间负责后台商品数据的处理，同样是开发后台工具给营销人员使用。
+
+2013/8 这个时候我辞了职并开始了环游中国的计划，到同年10月正式出发，3个月后结束旅程，然后开始尝试在淘宝上面开店卖东西。同时因为买了iPhone后对iOS开发非常感兴趣，所以同时也自学iOS程序开发，并且目前在苹果商店上架了2个App。
+
+*现在我觉得自己是非常喜欢iOS开发的，希望能找到一家做移动开发的公司去工作。
+如果您是Hr，并且你们公司刚好又需要找这样的人才，希望您联系我，非常感谢！*
+
+我的邮箱：linycc@sina.cn
