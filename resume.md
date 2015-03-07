@@ -4,7 +4,7 @@ title: Resume
 permalink: /resume/
 ---
 
-**Hi, I am LinYc. Welcome to my blog ,here is some work experience with me.**
+**Hi, I am Linyc. Welcome to my blog ,here is some work experience with me.**
 
 First, I am a programmer and I like it very much. So my College speciality i selected software develop.
 
