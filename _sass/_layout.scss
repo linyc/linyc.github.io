@@ -43,7 +43,7 @@
     .page-link {
         //lyc- color: $text-color;
         //lyc+
-        color:white;
+        color:gray;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -52,7 +52,7 @@
         }
         //lyc+
         &:hover{
-            color:gray;
+            color:white;
         }
     }
 
