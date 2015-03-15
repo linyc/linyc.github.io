@@ -6,9 +6,26 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Mar 2015 13:40:09 +0800</pubDate>
-    <lastBuildDate>Sun, 15 Mar 2015 13:40:09 +0800</lastBuildDate>
+    <pubDate>Sun, 15 Mar 2015 13:46:34 +0800</pubDate>
+    <lastBuildDate>Sun, 15 Mar 2015 13:46:34 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>第三季我是歌手与团队氛围的思考</title>
+        <description>&lt;p&gt;看第三季我是歌手感觉这季的后台气氛和往季的差别比较大，从这季的第一集开始我就一直在想这个问题，后面越发的觉得其中韩红起了很大的影响作用。&lt;/p&gt;
+
+&lt;p&gt;这个和一个团队很像，我以前也经历过，那种感觉就是即便你不想说话，性格也不是特别外向，但是在这样的氛围里面真的是会受影响。&lt;/p&gt;
+
+&lt;p&gt;一个团队往往需要这样的人来调节氛围，她也许不是特意去做的，但是她就是不自觉的有这种影响，所以说，团队氛围很重要，而能带动氛围的人其实更重要。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Mar 2015 13:00:00 +0800</pubDate>
+        <link>http://yourdomain.com/share/2015/03/15/third-season-i-am-singer-consider.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/share/2015/03/15/third-season-i-am-singer-consider.html</guid>
+        
+        
+        <category>share</category>
+        
+      </item>
     
       <item>
         <title>用通俗的例子解释OAuth和OpenID的区别</title>
@@ -57,23 +74,6 @@
         
         
         <category>protocol</category>
-        
-      </item>
-    
-      <item>
-        <title>第三季我是歌手与往季不同的思考</title>
-        <description>&lt;p&gt;看第三季我是歌手感觉这季的后台气氛和往季的差别比较大，从这季的第一集开始我就一直在想这个问题，后面越发的觉得其中韩红起了很大的影响作用。&lt;/p&gt;
-
-&lt;p&gt;这个和一个团队很像，我以前也经历过，那种感觉就是即便你不想说话，性格也不是特别外向，但是在这样的氛围里面真的是会受影响。&lt;/p&gt;
-
-&lt;p&gt;一个团队往往需要这样的人来调节氛围，她也许不是特意去做的，但是她就是不自觉的有这种影响，所以说，团队氛围很重要，而能带动氛围的人其实更重要。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Mar 2015 00:00:00 +0800</pubDate>
-        <link>http://yourdomain.com/blog/2015/03/15/third-season-i-am-singer-consider.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/blog/2015/03/15/third-season-i-am-singer-consider.html</guid>
-        
-        
-        <category>blog</category>
         
       </item>
     
