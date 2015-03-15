@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>用通俗的例子解释OAuth和OpenID的区别</title>
+  <meta name="description" content="  什么是OAuth(Wiki)  什么是OpenID(Wiki)">
+<LINK href="favicon.ico" type="image/x-icon" rel=icon> 
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/protocol/2015/03/15/oauth-and-openid.html">
+  <link rel="alternate" type="application/rss+xml" title="Linyc ’s wording" href="http://yourdomain.com/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Linyc ’s wording</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">简历</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/resume/">Resume</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">用通俗的例子解释OAuth和OpenID的区别</h1>
+    <p class="post-meta">Mar 15, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <ul>
+  <li>什么是OAuth(<a href="https://zh.wikipedia.org/wiki/OAuth">Wiki</a>)</li>
+  <li>什么是OpenID(<a href="https://zh.wikipedia.org/wiki/OpenID">Wiki</a>)</li>
+</ul>
+
+<p><em>详细的定义可以看wiki，下面举个例子说说我的理解</em></p>
+
+<p>现在很多网站都可以用第三方的账号登陆，比如，现在我要登录<code>淘宝</code>买东西，而如果我没有淘宝的账号，我也可以用<code>微博</code>的账号登录，这个微博账号就是第三方账号了。</p>
+
+<p><strong>OpenID强调 <code>验证 authentication</code>，而OAuth强调 <code>授权 authorization</code>。
+验证就是说“我”<code>是不是</code>(微博用户)，而授权是说“淘宝”<code>可不可以</code>，而<code>可不可以</code>的前提则是“我”<code>是不是</code>。</strong></p>
+
+<h3 id="section">过程大概是这样</h3>
+<ol>
+  <li>我点开微博登录的链接，淘宝就跳到微博登录页面，问我你是不是那个微博用户，是的话你用你的账号密码去登录，你先去给微博验明正身，是的话再来找我</li>
+  <li>
+    <p>好啦，我屁颠屁颠输入账号跟密码，如果可以登录说明我这个身份是对的，通过了微博的验证后微博就告诉淘宝说，没错没错，我家里确实有么这个家伙</p>
+
+    <p><strong>上面这些都是OpenID的责任，而且OpenID也只做这件事，就是前面说的<code>是不是</code></strong></p>
+  </li>
+  <li>然后呢，淘宝就说好好，有你微博验证我放心，于是就让我通过了</li>
+  <li>等等，这时淘宝只知道微博他们家有我存在，但是并不知道我在微博家里叫什么名，做过什么事，其实淘宝也不应该知道，对吧，要是知道我在微博家老是到处举报别人卖假货坑顾客什么的，那我让你进我大淘宝岂不是会坏了我的大事，你丫是来捣乱的吧(至于淘宝为什么会这么想，哼哼～你们懂的)</li>
+  <li>
+    <p>所以，淘宝通常就会做一件事，什么事呢？这时就轮到OAuth出场了，淘宝在把我交给微博验明正身的时候其实还“忽悠“了我，明明只是验个身份，却问我要不要把我在微博家叫什么名做过什么事也告诉它(就是通常看到的几个打勾选项：<code>允许访问我的昵称</code>/<code>允许访问我的头像</code>等等)，淘宝说这样就可以为我提供更多的服务，什么服务呢？模凌两可，我呢看到有更多服务也没多想就打勾了，不要白不要是吧。</p>
+
+    <p><strong>这里就用到了OAuth，就是前面说的<code>可不可以</code>，这个要是真发现我在微博家干过的事，会不会把我加入重点监控对象，那就要看淘宝有多少节操了</strong></p>
+  </li>
+</ol>
+
+<p>其实现在很多的第三方登录都是这样，验证身份的同时顺便把你在其他地方的资料拿到手，名曰资料共享，其实共享一些非敏感信息倒也无妨，还可以免去了每去一个新网站都要填写一大堆重复资料的问题。但是我要吐槽的是，很多网站明明让我用第三方账号登录，你都OAuth了为毛登录后还要再填一遍邮箱昵称之类的东西？早知道这样我还不如直接在你这边注册就好了，在我看来这是用户体验的问题了。</p>
+
+<p>写这些其实就是想用简单通俗的语言来解释这两者的区别(旁边哥们怒了：那你为毛还这么啰嗦！啰嗦！嗦！ 哎呀～我的耳朵我的耳朵…)</p>
+
+<p><strong><em>补充：</em></strong></p>
+
+<p><em>这篇也可以看看 <a href="http://huoding.com/2010/10/10/8">OAuth那些事儿</a></em></p>
+
+  </article>
+
+</div>
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2012121"></script>
+<!-- UY END -->
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Linyc ’s wording</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Power by Jekyll.</li>
+          <li><a href="mailto:linycc@sina.cn">linycc@sina.cn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/linyc">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">linyc on github.</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">2014 ~ 2015 year summary<br/> 2013/8 ~ start plan to travelling round the China.<br/> 2013/10 ~ 2014/1 traveling round the China,than buy an iPhone.<br/> 2014/2 ~ 2014/3 hometown.<br/> 2014/4 ~ start to sell wallet on taobao.<br/> 2014/10 ~ buy a macbook and start programming with iOS.<br/> 2015/2 ~ publish the first App on AppStore.<br/> 2015/3 ~ publish the second App on AppStore.<br/> </pre>
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
