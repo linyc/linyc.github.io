@@ -4,21 +4,20 @@ title: Resume
 permalink: /resume/
 ---
 
-**Hi, I am Linyc. Welcome to my blog ,here is some work experience with me.**
+**Hi, I am Linyc. Welcome to my blog ,here is my work experience.**
 
-First, I am a programmer and I like it very much. So my College speciality i selected software develop.
+I am a programmer and I enjoy what I am doing, so that is the reason I selected Software Developing as my major in college.
 
-2009/7 I am graduate of Guandong Mechanical & Electrical College, that i already 3 month practice experience before graduate.
+In July 2009, I graduated from Guangdong Mechanical & Electrical College. Moreover, I already had 3 months practicing experience before graduate.
 
-2009/8 ~ 2011/12 I am working in a software company and complete many projects with myself for company. that was use C#.net to develop and most of project was WinForm Framework. I am good at that. Of course, I also used Asp.net Framework.
+From August 2009 to December 2011, I was working in a software company and completed many projects by myself. A lot projects are required to use `C#.Net` to develop and most of projects were in WinForm Framework. I am an expert of `C#.Net` and `WinForm` Framework. Importantly, I am also expert at `Asp.Net` Framework.
 
-2011/12 ~ 2013/5 I am working in an E-commerce(B2B2C) company and my job is develop a background program, that is powerful tool to help Business to upload product data and manager and more.
+From December 2011 to May 2013, I worked in an E-Commerce(B2B2C) company and my job was to develop a background program a powerful tool helping business to upload data of product and arrange them in order.
 
-2013/5 ~ 2013/8 I also working in a E-commerce(B2C) company and also develop some tools to help the operation personal to work.
+From May 2013 to August 2013, I worked in a E-Commerce(B2C) company and developed some tools to help the operation of personal business.
 
-2013/8 I start plan to travelling round the China and I was go on October, when over the travelling, I try to open store on the taobao.com on May 2014.  And start to study iOS develop than publish two apps on the AppStore success.
+In August 2013, I took a vacation and travelled round the China. After the vacation, in October 2013, I run an online business on the `taobao.com`. In May 2014, I started to learn the `iOS` developing and published two apps on the `AppStore` success.
 
-*Now, I feel I'm really like for the iOS develop, so I want to work on an mobile develop company.
-If you are Hr, and your company want adverstise that,please contact*
+*Now, I really enjoy the `iOS` developing and hope I can work in a related company and especially a mobile developing company. Anyway, If you have any question and feel free to contact me.*
 
 E-mail：linycc@sina.cn

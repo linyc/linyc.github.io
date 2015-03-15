@@ -158,9 +158,9 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: gray; }
-  .site-title:hover {
     color: white; }
+  .site-title:hover {
+    color: gray; }
 
 .site-nav {
   float: right;

@@ -6,9 +6,57 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Mar 2015 02:04:51 +0800</pubDate>
-    <lastBuildDate>Sat, 14 Mar 2015 02:04:51 +0800</lastBuildDate>
+    <pubDate>Sun, 15 Mar 2015 13:11:30 +0800</pubDate>
+    <lastBuildDate>Sun, 15 Mar 2015 13:11:30 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>用通俗的例子解释OAuth和OpenID的区别</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;什么是OAuth(&lt;a href=&quot;https://zh.wikipedia.org/wiki/OAuth&quot;&gt;Wiki&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;什么是OpenID(&lt;a href=&quot;https://zh.wikipedia.org/wiki/OpenID&quot;&gt;Wiki&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;详细的定义可以看wiki，下面举个例子说说我的理解&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;现在很多网站都可以用第三方的账号登陆，比如，现在我要登录&lt;code&gt;淘宝&lt;/code&gt;买东西，而如果我没有淘宝的账号，我也可以用&lt;code&gt;微博&lt;/code&gt;的账号登录，这个微博账号就是第三方账号了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;OpenID强调 &lt;code&gt;验证 authentication&lt;/code&gt;，而OAuth强调 &lt;code&gt;授权 authorization&lt;/code&gt;。
+验证就是说“我”&lt;code&gt;是不是&lt;/code&gt;(微博用户)，而授权是说“淘宝”&lt;code&gt;可不可以&lt;/code&gt;，而&lt;code&gt;可不可以&lt;/code&gt;的前提则是“我”&lt;code&gt;是不是&lt;/code&gt;。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;过程大概是这样&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;我点开微博登录的链接，淘宝就跳到微博登录页面，问我你是不是那个微博用户，是的话你用你的账号密码去登录，你先去给微博验明正身，是的话再来找我&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;好啦，我屁颠屁颠输入账号跟密码，如果可以登录说明我这个身份是对的，通过了微博的验证后微博就告诉淘宝说，没错没错，我家里确实有么这个家伙&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;上面这些都是OpenID的责任，而且OpenID也只做这件事，就是前面说的&lt;code&gt;是不是&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;然后呢，淘宝就说好好，有你微博验证我放心，于是就让我通过了&lt;/li&gt;
+  &lt;li&gt;等等，这时淘宝只知道微博他们家有我存在，但是并不知道我在微博家里叫什么名，做过什么事，其实淘宝也不应该知道，对吧，要是知道我在微博家老是到处举报别人卖假货坑顾客什么的，那我让你进我大淘宝岂不是会坏了我的大事，你丫是来捣乱的吧(至于淘宝为什么会这么想，哼哼～你们懂的)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;所以，淘宝通常就会做一件事，什么事呢？这时就轮到OAuth出场了，淘宝在把我交给微博验明正身的时候其实还“忽悠“了我，明明只是验个身份，却问我要不要把我在微博家叫什么名做过什么事也告诉它(就是通常看到的几个打勾选项：&lt;code&gt;允许访问我的昵称&lt;/code&gt;/&lt;code&gt;允许访问我的头像&lt;/code&gt;等等)，淘宝说这样就可以为我提供更多的服务，什么服务呢？模凌两可，我呢看到有更多服务也没多想就打勾了，不要白不要是吧。&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;这里就用到了OAuth，就是前面说的&lt;code&gt;可不可以&lt;/code&gt;，这个要是真发现我在微博家干过的事，会不会把我加入重点监控对象，那就要看淘宝有多少节操了&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;其实现在很多的第三方登录都是这样，验证身份的同时顺便把你在其他地方的资料拿到手，名曰资料共享，其实共享一些非敏感信息倒也无妨，还可以免去了每去一个新网站都要填写一大堆重复资料的问题。但是我要吐槽的是，很多网站明明让我用第三方账号登录，你都OAuth了为毛登录后还要再填一遍邮箱昵称之类的东西？早知道这样我还不如直接在你这边注册就好了，在我看来这是用户体验的问题了。&lt;/p&gt;
+
+&lt;p&gt;写这些其实就是想用简单通俗的语言来解释这两者的区别(旁边哥们怒了：那你为毛还这么啰嗦！啰嗦！嗦！ 哎呀～我的耳朵我的耳朵…)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;补充：&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;这篇也可以看看 &lt;a href=&quot;http://huoding.com/2010/10/10/8&quot;&gt;OAuth那些事儿&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Mar 2015 02:00:00 +0800</pubDate>
+        <link>http://yourdomain.com/protocol/2015/03/15/oauth-and-openid.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/protocol/2015/03/15/oauth-and-openid.html</guid>
+        
+        
+        <category>protocol</category>
+        
+      </item>
     
       <item>
         <title>无状态、REST、RESTful 和 Web Services[转]</title>
@@ -61,6 +109,10 @@
 &lt;p&gt;满足 REST 的应用程序或设计就是 RESTful。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://hiaero.net/rest-and-restful&quot;&gt;&lt;em&gt;原文地址：http://hiaero.net/rest-and-restful&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;补充：其他资料&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.csdn.net/article/2013-08-01/2816424-Why-REST-is-so-important&quot;&gt;为啥REST如此重要？&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 14 Mar 2015 00:00:00 +0800</pubDate>
         <link>http://yourdomain.com/protocol/2015/03/14/restful.html</link>
@@ -141,7 +193,7 @@
     
       <item>
         <title>博客折腾历程</title>
-        <description>&lt;p&gt;之前一直在博客园写技术的东西，后来偶尔看到各种“静态”，“Hexo”，“Wordpress”，“jekyll”，“Ghost”等等跟博客有关的字眼，然后也发现很多博客真的很漂亮，于是也想着弄个来玩玩。&lt;/p&gt;
+        <description>&lt;p&gt;之前一直在&lt;a href=&quot;http://www.cnblogs.com/linyc&quot;&gt;博客园&lt;/a&gt;写技术的东西，后来偶尔看到各种“静态”，“Hexo”，“Wordpress”，“jekyll”，“Ghost”等等跟博客有关的字眼，然后也发现很多博客真的很漂亮，于是也想着弄个来玩玩。&lt;/p&gt;
 
 &lt;p&gt;慢慢的又发现原来github还能建免费博客，抱着尝鲜的态度也跟着一些教程弄了个玩玩，弄着弄着发现原来静态博客还挺好玩的，Markdown的语法也是蛮新奇的，然后各种定制各种模板，之所以折腾起来比较爽还是因为感觉整个博客的东西都在自己的掌握中，那种感觉和在博客园写东西完全不是一回事啊。&lt;/p&gt;
 
@@ -149,7 +201,7 @@
 
 &lt;p&gt;最后突然意识到，其实我就是想建个博客来写写东西而已，这是最原始的需求，为什么后面会花费这么多时间去搞那些次要的主题之类的东西呢？&lt;/p&gt;
 
-&lt;p&gt;最近看到这张图，看完想想非常有道理，很多时候总是背离了自己单纯的初衷，下图～共勉～～&lt;/p&gt;
+&lt;p&gt;最近看到这张图，看完想想非常有道理，很多时候总是背离了自己单纯的初衷，图中的梦想也可以理解为初衷或者目的～共勉～～&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/image/dreamEssence.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
