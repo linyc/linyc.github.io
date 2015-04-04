@@ -20,4 +20,8 @@ In August 2013, I took a vacation and travelled round the China. After the vacat
 
 *Now, I really enjoy the `iOS` developing and hope I can work in a related company and especially a mobile developing company. Anyway, If you have any question and feel free to contact me.*
 
-E-mail：linycc@sina.cn
+E-mail：linycc#sina.cn
+
+========
+
+update 2015/3/27 :I get a new work.
