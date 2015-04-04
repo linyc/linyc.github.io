@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 今日美文App[我的作品]
+title: 今日美文App[iOS作品]
 categories: app
+tags: [app,ios,iphone]
 date: 2015-03-13
 ---
 

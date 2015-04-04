@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Apr 2015 14:46:45 +0800</pubDate>
-    <lastBuildDate>Sat, 04 Apr 2015 14:46:45 +0800</lastBuildDate>
+    <pubDate>Sat, 04 Apr 2015 14:56:21 +0800</pubDate>
+    <lastBuildDate>Sat, 04 Apr 2015 14:56:21 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -224,7 +224,7 @@
       </item>
     
       <item>
-        <title>今日美文App[我的作品]</title>
+        <title>今日美文App[iOS作品]</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/jin-ri-mei-wen-lei-mei-ri/id972558048?l=zh&amp;amp;ls=1&amp;amp;mt=8&quot;&gt;App store 下载地址&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/image/TodayArticleAppIcon@3x.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -242,6 +242,12 @@
         <pubDate>Fri, 13 Mar 2015 00:00:00 +0800</pubDate>
         <link>http://yourdomain.com/app/2015/03/13/TodayArticleApp.html</link>
         <guid isPermaLink="true">http://yourdomain.com/app/2015/03/13/TodayArticleApp.html</guid>
+        
+        <category>app</category>
+        
+        <category>ios</category>
+        
+        <category>iphone</category>
         
         
         <category>app</category>
@@ -263,7 +269,7 @@
       </item>
     
       <item>
-        <title>今日材料报价App[我的作品]</title>
+        <title>今日材料报价App[iOS作品]</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/jin-ri-cai-liao-bao-jia/id967274552?l=zh&amp;amp;ls=1&amp;amp;mt=8&quot;&gt;App store 下载地址&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/image/PlasticAppIcon@3x.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -285,6 +291,12 @@
         <pubDate>Sat, 07 Mar 2015 00:00:00 +0800</pubDate>
         <link>http://yourdomain.com/app/2015/03/07/PlasticPriceApp.html</link>
         <guid isPermaLink="true">http://yourdomain.com/app/2015/03/07/PlasticPriceApp.html</guid>
+        
+        <category>app</category>
+        
+        <category>ios</category>
+        
+        <category>iphone</category>
         
         
         <category>app</category>
